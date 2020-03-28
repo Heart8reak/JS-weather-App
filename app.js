@@ -36,12 +36,12 @@ window.addEventListener('load', ()=> {
                 //Change Celsius/Fahrenheit
                 temperatureSection.addEventListener('click', () => {
                     console.log('click')
-                    if (temperatureSpan.textContext === 'F') {
-                        temperatureSpan.textContext = 'C'
-                        temperatureDegree.textContent = Math.floor(celsius)
+                    if (temperatureSpan.innerHTML === 'F') {
+                        temperatureSpan.innerHTML = 'C'
+                        temperatureDegree.innerHTML = Math.floor(celcius)
                     } else {
-                        temperatureSpan.textContent = 'F'
-                        temperatureDegree.textContent = temperature
+                        temperatureSpan.innerHTML = 'F'
+                        temperatureDegree.innerHTML = temperature
                     }
                 })
             })
